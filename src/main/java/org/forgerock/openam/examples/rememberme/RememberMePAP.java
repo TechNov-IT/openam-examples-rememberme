@@ -13,7 +13,7 @@
  * Header, with the fields enclosed by brackets [] replaced by your own identifying
  * information: "Portions copyright [year] [name of copyright owner]".
  */
-package org.forgerock.demo;
+package org.forgerock.openam.examples.rememberme;
 
 import com.iplanet.sso.SSOException;
 import com.iplanet.sso.SSOToken;
