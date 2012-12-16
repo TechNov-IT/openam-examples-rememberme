@@ -28,3 +28,8 @@ org.forgerock.openam.examples.rememberme.RememberMePAP
 ## License
 
 Everything in this repository is licensed under the ForgeRock CDDL license: http://forgerock.org/license/CDDLv1.0.html
+
+## More info
+
+For more information on this authentication module check out this blog entry:
+http://blogs.forgerock.org/petermajor/2012/12/implementing-remember-me-functionality-part-2/
