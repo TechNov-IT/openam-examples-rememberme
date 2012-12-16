@@ -4,19 +4,26 @@ This authentication module provides an example way to implement remember me func
 
 ## How to install the module
 
-Open Up the administration console and go to Configuration -> Servers and sites -> Default Server Config -> Advanced tab and set the following property:
+* Open Up the administration console and go to Configuration -> Servers and sites -> Default Server Config -> Advanced tab and set the following property:
+<pre>
 ssoadm.disabled=false
-
+</pre>
 * Visit /openam/ssoadm.jsp?cmd=create-svc page, and upload the content of amAuthRememberMe.xml
 * Visit /openam/ssoadm.jsp?cmd=register-auth-module page and enter:
+<pre>
 org.forgerock.openam.examples.rememberme.RememberMe
+</pre>
 * Restart the container
 * Go to Access Control -> realm -> Authentication page and create a new Authentication chain containing:
+<pre>
 RememberMe SUFFICIENT
 DataStore REQUIRED
+</pre>
 * In this new chain also set the following Post Authentication Processing class:
+<pre>
 org.forgerock.openam.examples.rememberme.RememberMePAP
-* change the Organization Authentication Configuration to  this new chain
+</pre>
+* Change the Organization Authentication Configuration to  this new chain
 
 ## License
 
